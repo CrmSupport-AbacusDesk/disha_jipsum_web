@@ -115,6 +115,9 @@ import { DigitallistComponent } from './digitallist/digitallist.component';
 import { SystemUserListComponent } from './system-user-list/system-user-list.component';
 import { SystemUserAddComponent } from './system-user-add/system-user-add.component';
 import { DeactiveStatusGiftComponent } from './deactive-status-gift/deactive-status-gift.component';
+import { AddCouponDetailComponent } from './add-coupon-detail/add-coupon-detail.component';
+import { NgxQRCodeModule } from '@techiediaries/ngx-qrcode';
+import { AssignCouponCodeComponent } from './assign-coupon-code/assign-coupon-code.component';
 
 FusionChartsModule.fcRoot(FusionCharts, Charts, FusionTheme);
 
@@ -169,6 +172,8 @@ const routes: Routes = [
 
   {path: 'system-user-add', component:SystemUserAddComponent , canActivate: [AuthGuard] },
 
+  {path: 'assign-coupon-code', component:AssignCouponCodeComponent , canActivate: [AuthGuard] },
+
   {path: 'redeem-request-list/:pending', component:RedeemRequestListComponent , canActivate: [AuthGuard] },
   {path: 'daily-coupon-access', component:DailyCouponAccessComponent , canActivate: [AuthGuard] },
   {path: 'company-profile', component:CompanyProfileComponent , canActivate: [AuthGuard] },
@@ -176,6 +181,13 @@ const routes: Routes = [
   {path: 'notification-history', component:NotificationHistoryComponent , canActivate: [AuthGuard] },
   {path: 'message-history', component:MessageHistoryComponent , canActivate: [AuthGuard] },
   {path: 'add-coupon', component:AddCouponCodesComponent , canActivate: [AuthGuard] },
+
+
+
+  {path: 'add-coupon-detail', component:AddCouponDetailComponent , canActivate: [AuthGuard] },
+  {path: 'add-coupon-detail/:couponid', component:AddCouponDetailComponent , canActivate: [AuthGuard] },
+
+
   {path: 'contractor-list', component:ContractorListComponent , canActivate: [AuthGuard] },
   {path: 'coupon-code-master', component:CouponCodeMasterComponent , canActivate: [AuthGuard]},
   {path: 'digitallist', component:DigitallistComponent , canActivate: [AuthGuard]},
@@ -283,6 +295,8 @@ const routes: Routes = [
     MasterTabComponent,
     UploaddigitalcatComponent,
     DigitallistComponent,
+    AddCouponDetailComponent,
+    AssignCouponCodeComponent,
   
 
 
@@ -309,6 +323,7 @@ const routes: Routes = [
     MatExpansionModule,
     FilterPipeModule,
     NgxMatSelectSearchModule,
+    NgxQRCodeModule
   ],
   providers: [
     AuthGuard,
@@ -348,7 +363,9 @@ const routes: Routes = [
     SendNotificationComponent,
     AssignRelatedProductsComponent,
     ContractorSatusModalComponent,
-    ChangeTypeModalComponent
+    ChangeTypeModalComponent,
+    AddCouponDetailComponent
+    
   ],
   
   exports: [
