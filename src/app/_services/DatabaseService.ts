@@ -19,17 +19,13 @@
     export class DatabaseService implements OnInit {
 
         // Live URL
-        // myurl = 'https://apps.abacusdesk.com/jagdambaplywood/dd_api/';
-        // uploadUrl = "https://apps.abacusdesk.com/jagdambaplywood/dd_api/app/uploads/";
+        myurl = 'https://apps.abacusdesk.com/dishagypsum/dd_api/';
+        uploadUrl = "https://apps.abacusdesk.com/dishagypsum/dd_api/app/uploads/";
 
-
-
-        // myurl = 'https://apps.abacusdesk.com/surfacedekorloyalty/dd_api/';
-        // uploadUrl = "https://apps.abacusdesk.com/surfacedekorloyalty/dd_api/app/uploads/";
 
         // Testing URL
-        myurl = 'https://devcrm.abacusdesk.com/dishagypsum/dd_api/';
-        uploadUrl = "https://devcrm.abacusdesk.com/dishagypsum/dd_api/app/uploads/";
+        // myurl = 'https://devcrm.abacusdesk.com/dishagypsum/dd_api/';
+        // uploadUrl = "https://devcrm.abacusdesk.com/dishagypsum/dd_api/app/uploads/";
         
    
 
