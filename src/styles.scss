@@ -8681,8 +8681,8 @@ h2.hed_mr {
 
 
 .prnt_prt {
-    height: 140px !important;
-    border: 2px solid #000;
+    height: 136px !important;
+    border: 2px solid #00397f;
     justify-content: space-between;
     margin-top: 4px !important;
 }
@@ -8700,4 +8700,7 @@ h2.hed_mr {
 }
 .tp_bg h2 {
     color: #fff !important;
+}
+h2.dis_fnt {
+    border-bottom: 1px solid #000;
 }

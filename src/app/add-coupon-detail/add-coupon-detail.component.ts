@@ -65,6 +65,10 @@ export class AddCouponDetailComponent implements OnInit {
           width: 100%;
           height: 100%;
         }
+        .aclass img {
+          width: 100px;
+          object-fit: cover;
+        }
         
         body
         {
